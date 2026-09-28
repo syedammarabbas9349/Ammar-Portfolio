@@ -1,0 +1,8 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "installCommand": "pnpm install",
+  "buildCommand": "PORT=3000 BASE_PATH=/ NODE_ENV=production pnpm --filter @workspace/ammar-photo-portfolio run build",
+  "outputDirectory": "artifacts/ammar-photo-portfolio/dist/public",
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+}
